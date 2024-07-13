@@ -1,0 +1,13 @@
+<div>
+  <div class="title">
+    <app-search-title></app-search-title>
+  </div>
+  <form class="form">
+    <app-name-field [name]="name" (nameChange)="onNameChange($event)"></app-name-field>
+    <app-filter-property-select ></app-filter-property-select>
+    <app-sort-select></app-sort-select>
+  </form>
+  <div class="results">
+    <app-countries-list></app-countries-list>
+  </div>
+</div>
